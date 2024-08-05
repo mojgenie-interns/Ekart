@@ -12,8 +12,12 @@ class Product extends Model
 {
     use HasFactory;
 
-    
+
     protected $guarded = [];
+
+    public function category()
+    {
+    }
 
     protected function status(): CastsAttribute
     {

@@ -19,6 +19,7 @@
                                 <td>No. </td>
                                 <td>Photo </td>
                                 <th>Name</th>
+
                                 <th>Price</th>
                                 <th>Status</th>
                                 <th>Is_favouriate</th>
@@ -30,7 +31,7 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>
-                                        <img src="{{ asset('photo/' . $product->photo) }}" alt="">
+                                        <img src="{{ asset('storage/photo/' . $product->photo) }}" alt="">
                                     </td>
                                     <td>{{ $product->name }}</td>
                                     <td>{{ number_format($product->prize, 2) }}</td>

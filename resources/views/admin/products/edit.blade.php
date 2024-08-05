@@ -48,17 +48,17 @@
 
                         <div class="form-group">
                             <label for="">Staus</label>
-                            <input type="radio" @checked($product->status == 1) name="status" value="1"
+                            <input type="radio" @checked($product->status == 'Active') name="status" value="1"
                                 id="status">Active
-                            <input type="radio" name="status" @checked($product->status == 0) value="0"
+                            <input type="radio" name="status" @checked($product->status == 'Inactive') value="0"
                                 id="status">Inactive
 
                         </div>
                         <div class="form-group">
                             <label for="">Is_Faviorate</label>
-                            <input type="radio" @checked($product->is_favourite == 1)name="is_favourite" value="1"
+                            <input type="radio" @checked($product->is_favourite == 'Yes') name="is_favourite" value="1"
                                 id="is_favourite">Yes
-                            <input type="radio" @checked($product->is_favourite == 0)name="is_favourite" value="0"
+                            <input type="radio" @checked($product->is_favourite == 'No') name="is_favourite" value="0"
                                 id="is_favourite">No
 
                         </div>
